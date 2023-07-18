@@ -1,16 +1,17 @@
 import React from 'react';
-import qzone1 from '../../../assets/qZone1.png'
-import qzone2 from '../../../assets/qZone2.png'
-import qzone3 from '../../../assets/qZone3.png'
-
+import qZone1 from "../../../img/qZone1.png"
+import qZone2 from "../../../img/qZone2.png"
+import qZone3 from "../../../img/qZone3.png"
 const QZone = () => {
     return (
-        <div className='bg-secondary text-center my-4 py-4'>
-            <h4>Q-Zone</h4>
-            <div>
-                <img src={qzone1} alt="" />
-                <img src={qzone2} alt="" />
-                <img src={qzone3} alt="" />
+        <div className='bg-bg-secondary border border-1 '>
+            <h4 className='ps-3 pt-3'>Q-Zone</h4>
+            <div className='p-5'>
+
+                <img src={qZone1} alt="" />
+                <img src={qZone2} alt="" />
+                <img src={qZone3} alt="" />
+
             </div>
         </div>
     );

@@ -1,26 +1,27 @@
 import React from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
-import { FaGoogle, FaGithub, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaGithub, FaGoogle, FaInstagram, FaTwitter } from 'react-icons/fa';
 import QZone from '../QZone/QZone';
-import bg from '../../../assets/bg.png'
+import bg from '../../../img/bg.png'
 
 const RightNav = () => {
     return (
         <div>
-            <h4 className='mt-4'>Login With</h4>
-            <Button className='mb-2' variant="outline-primary"> <FaGoogle /> Login with Google</Button>
-            <Button variant="outline-secondary"> <FaGithub></FaGithub> Login with Github</Button>
+            <h4>Login with</h4>
+            <Button className='w-100 mb-3 mt-4' variant="outline-primary">< FaGoogle className='me-3' /> Login With Google</Button>
+            <Button className='w-100 mb-4' variant="outline-secondary"><FaGithub className='me-3' /> Login With Github</Button>
             <div>
-                <h4 className='mt-4'>Find us on</h4>
-                <ListGroup>
-                    <ListGroup.Item> <FaFacebook></FaFacebook> facebook</ListGroup.Item>
-                    <ListGroup.Item> <FaTwitter></FaTwitter> twitter </ListGroup.Item>
-                    <ListGroup.Item><FaInstagram></FaInstagram> instagram</ListGroup.Item>
+                <h4 className='mb-4'>Find Us On</h4>
+                <ListGroup className='mb-4'>
+                    <ListGroup.Item className=''><FaFacebookF className=' justify-content-between' ></FaFacebookF> Facebook</ListGroup.Item>
+                    <ListGroup.Item className=''><FaInstagram></FaInstagram> Instagram</ListGroup.Item>
+                    <ListGroup.Item className=''><FaTwitter></FaTwitter> Facebook</ListGroup.Item>
                 </ListGroup>
-            </div>
-            <QZone></QZone>
-            <div>
-                <img src={bg} alt="" />
+                <QZone></QZone>
+
+                <div>
+                    <img src={bg} alt="" />
+                </div>
             </div>
         </div>
     );

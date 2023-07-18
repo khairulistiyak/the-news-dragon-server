@@ -9,19 +9,16 @@ import { Outlet } from 'react-router-dom';
 const Main = () => {
     return (
         <div>
-            <Header></Header>
             <Container>
+                <Header></Header>
                 <Row>
-                    <Col lg={3}>
-                        <LeftNav></LeftNav>
-                    </Col>
+                    <Col lg={3}><LeftNav></LeftNav></Col>
                     <Col lg={6}>
                         <Outlet></Outlet>
                     </Col>
-                    <Col lg={3}>
-                        <RightNav></RightNav>
-                    </Col>
+                    <Col lg={3}><RightNav></RightNav></Col>
                 </Row>
+
             </Container>
             <Footer></Footer>
         </div>
