@@ -6,30 +6,27 @@ import NewsLayout from "../layouts/NewsLayout";
 import News from "../pages/News/News/News";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main></Main>,
-        children: [
-            {
-                path: '/',
-                element: <Home></Home>
-            },
-            {
-                path: "/category/:id",
-                element: <Category></Category>
-            },
-            {
-                path: "news",
-                element: <NewsLayout></NewsLayout>,
-                children: [
-                    {
-                        path: ":id",
-                        element: <News></News>
-                    }
-                ]
-            }
-        ]
-    }
+    // {
+    //     path: '/',
+    //     element: <Main></Main>,
+    //     children: [
+
+    //         {
+    //             path: "/category/:id",
+    //             element: <Category></Category>
+    //         },
+    //         {
+    //             path: "news",
+    //             element: <NewsLayout></NewsLayout>,
+    //             children: [
+    //                 {
+    //                     path: ":id",
+    //                     element: <News></News>
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // }
 ])
 
 export default router;

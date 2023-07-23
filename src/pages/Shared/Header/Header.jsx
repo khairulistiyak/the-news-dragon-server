@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import reactlogo from "../../../img/logo.png"
 import moment from 'moment';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Marquee from 'react-fast-marquee';
+
+import { AutContext } from '../../../providers/AuthProvider';
+
 
 
 const Header = () => {
+
     return (
         <Container className='mt-4'>
 
@@ -20,7 +24,6 @@ const Header = () => {
                     I can be a React component, multiple React components, or just some text.
                 </Marquee>
             </div>
-
         </Container>
     );
 };
